@@ -144,7 +144,7 @@ body {
         margin-bottom: 48px;
         width: 496;
         text-align: center;
-      margin: 0 auto 48px auto;
+      
       
 }
 .hero .container {
@@ -197,6 +197,7 @@ body {
         letter-spacing: 0.02em;
         margin-bottom: 72px;
         padding-top: 0;
+        text-align: center;
     }
 .work-list {
     display: flex;
@@ -208,28 +209,43 @@ body {
 .people {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: var (var(--white-three));
 }
 .people-slogan {
     color: var(--navy);
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
-    margin-bottom: 42px;
+    margin-bottom: 72px;
+    text-align: center;
 
 }  
 .people-list {
     display: flex;
         gap: 24px;
         margin-bottom: 120px;
+        flex-wrap: wrap;
 
 }
+.people-img {
+flex-basis: calc(100%/4-24px);
 
+}
+.master {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+}
 .name{
         color: var(--navy);
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-        letter-spacing: 0.02em
+        letter-spacing: 0.02em;
+        margin-top: 32px;
+        margin-bottom: 8px;
     }
    .job{
         color:var(--contact-cl);
@@ -261,9 +277,7 @@ body {
 }
 
 
-.people{
-    background-color: var(--white-three);
-}
+
 
 .footer{
     background-color:var(--navy) ;
@@ -278,6 +292,8 @@ body {
 .nav-button {
     display: flex;
     gap: 24px;
+justify-content: space-between;
+    
 }
 .button-portfolio  {
 color: var(--blue);
@@ -302,14 +318,19 @@ border: 1px solid var(--white-two);
 .section-img {
     display: flex;
     gap: 24px;
-   
+   flex-wrap: wrap;
+}
+.section-item {
+    flex-basis: calc(100%/3-24px);
 }
 .img-title {
 color: var(--navy);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .img-text {
