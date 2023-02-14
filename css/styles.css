@@ -57,6 +57,10 @@ body {
     margin-right: auto;
 
 }
+.list {
+    margin-left: 0;
+    padding-left: 0;
+}
 .header-line .container  {
     display: flex;
     justify-content: space-between;
@@ -65,6 +69,7 @@ body {
     max-width: 1406px;
     padding: 0 15px;
     margin: 0 auto;
+    border-bottom: 1px solid var(--white-two);
 
 }
 
@@ -79,6 +84,7 @@ body {
     padding-top: 24px ;
     padding-bottom: 24px ;
     margin-right: 76px;
+    text-align: center;
 
     
     }
@@ -93,10 +99,14 @@ body {
 
 .main-nav{
     display: flex;
+    align-items: center;
+    
 }
 .nav-list {
     display: flex;
     flex-grow: 1;
+    margin-right: auto;
+    
    
 }
 .nav-link{
@@ -106,6 +116,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: inline-block;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
 .nav-link:hover,
@@ -130,12 +143,14 @@ body {
 .header-contact:hover,
 .header-contact:focus{
     color: var(--cl-hover);}
-  .nav-address {
-      display: flex;
-      gap: 40px;
+.nav-address {
+    display: flex;
+    gap: 40px;
     padding: 0;
-        margin: 0;
-  }
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
   
 .hero .container {
@@ -152,11 +167,12 @@ text-align: center;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
-        margin: 0 auto 48 px;
-        max-width: 494px;
+        margin: 0 auto 48px;
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
        
-      
-      
+          
       
 }
 .hero .container {
@@ -194,12 +210,10 @@ text-align: center;
 }
 .about-list {
     display: flex;
-    flex-basis: calc ((100% - 3 * 24px) / 4);
-    
-}
+    flex-basis:calc((100% - 3 * 24px) / 4);}
+
 .about-item:not(:last-child){
   margin-right: 24px;
-  
 }
 
 .about-title{
@@ -219,7 +233,6 @@ text-align: center;
 }
 
 .work  .container {
-    padding-top: 120px;
     padding-bottom: 120px;
 }
 .work-slogan{
@@ -241,11 +254,10 @@ text-align: center;
 .people {
     padding-top: 120px;
         padding-bottom: 120px;
+        background-color: var(--white-three);
 }
 .people .container {
     background-color: var(--white-three);
-   
-    
 
 }
 
@@ -256,36 +268,31 @@ text-align: center;
     letter-spacing: 0.02em;
     margin-bottom: 72px;
     text-align: center;
-    
-
 }  
 .people-list {
     display: flex;
         gap: 24px;
         margin-bottom: 120px;
         padding-left: 0;
-        
-
 }
 .people-img {
-flex-basis: calc (( 100% - 3 * 24px) / 4);
+flex-basis:  calc(( 100% - 3 * 24px) / 4);
+background-color: var(--white);}
 
-
-}
 .master {
     display: flex;
         flex-direction: column;
         align-items: center;
-        
+        padding-top: 32px;
+        padding-bottom: 32px;
 
 }
-.name{
+.name {
         color: var(--navy);
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        margin-top: 32px;
         margin-bottom: 8px;
     }
    .job{
@@ -323,14 +330,17 @@ flex-basis: calc (( 100% - 3 * 24px) / 4);
     color: var(--white-three);
 }
 
-
+.nav-portfolio {
+    padding-top: 88px ;
+    padding-bottom: 120px;
+}
 .nav-button  {
     display: flex;
     gap: 24px;
-    flex-basis: calc ((100% - 4 * 24px) / 5);
+    flex-basis: calc((100% - 4 * 24px) / 5);
 justify-content: center;
-
-    
+margin-bottom: 72px;
+padding: 12px 24px;  
 }
 .button-portfolio  {
 color: var(--blue);
@@ -355,18 +365,24 @@ border: 1px solid var(--white-two);
 .section-img {
     display: flex;
     gap: 24px;
-flex-basis: calc ((100% - 3 * 24px) / 3);
 flex-wrap: wrap;
-margin-left: 0;
 }
-
+.section-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+}
+.card-info {
+border: 1px solid var(--white-two);
+border-top: none;
+padding-top: 32px;
+padding-bottom: 32px;
+}
 .img-title {
 color: var(--navy);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
+    margin-bottom: 8px;
    
 }
 
@@ -376,11 +392,7 @@ color: var(--contact-cl);
     line-height: 1.5;
     letter-spacing: 0.02em
 }
-.section-item {
-    border: 1px solid var(--white-two);
-    border-top: none;
-   
-}
+
 .link {
     text-decoration: none;
    
