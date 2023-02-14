@@ -141,11 +141,12 @@ body {
 .hero .container {
     padding-top: 120px;
         padding-bottom: 120px;
-        text-align: center;
         background-color: var(--navy);
 }
     
-
+.hero {
+text-align: center;
+}
 .hero-title {
     color: var(--white);
         font-size: 56px;
@@ -153,7 +154,7 @@ body {
         letter-spacing: 0.02em;
         margin: 0 auto 48 px;
         max-width: 494px;
-        text-align: center;
+       
       
       
       
@@ -321,6 +322,8 @@ flex-basis: calc (( 100% - 3 * 24px) / 4);
 .color-studio-footer {
     color: var(--white-three);
 }
+
+
 .nav-button  {
     display: flex;
     gap: 24px;
